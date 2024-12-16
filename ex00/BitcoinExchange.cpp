@@ -97,7 +97,7 @@ static void	checkDateAndAmount(std::string &date, std::string &amount) {
 	if (!isFloat(amount))
 		throw std::runtime_error("Error: Invalid amount format => " + amount);
 	
-	float	amountFloat = std::stof(amount);
+	float	amountFloat = std::atof(amount.c_str());
 	if (amountFloat < 0)
 		throw std::runtime_error("Error: not a positive number.");
 	else if (amountFloat > 1000)

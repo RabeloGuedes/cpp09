@@ -1,5 +1,5 @@
 CXX = c++
-CXXFLAGS = -Wall -Wextra -Werror -g -I.
+CXXFLAGS = -Wall -Wextra -Werror -g -I. -std=c++98
 
 NAME = btc
 SRCS = BitcoinExchange.cpp
